@@ -1,0 +1,82 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 72, 180);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 0;
+}
+.container h2 {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  margin: 20px;
+  width: 200px;
+  position: relative;
+}
+.form-control input {
+  border: none;
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  background-color: transparent;
+  border-bottom: 2px white solid;
+  width: 200px;
+  display: block;
+}
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+}
+.form-control label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+button {
+  width: 100%;
+  padding: 6px;
+  margin-left: 20px;
+  border: none;
+  letter-spacing: 1px;
+  background-color: lightblue;
+  border-radius: 8px;
+}
+button:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+.form-control label span {
+  font-size: 20px;
+  display: inline-block;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
